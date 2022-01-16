@@ -2,10 +2,9 @@ const currencyElOne = document.getElementById('currencyOne');
 const currencyElTwo = document.getElementById('currencyTwo');
 const amountElOne = document.getElementById('amountOne');
 const amountElTwo = document.getElementById('amountTwo');
-
 const rateEl = document.getElementById('rate');
 
-// Fetch exchange rates and update the dome
+
 function calculate() {
   const currencyOne = currencyElOne.value;
   const currencyTwo = currencyElTwo.value;
@@ -20,7 +19,7 @@ function calculate() {
     });
 }
 
-// Event Listeners
+
 currencyElOne.addEventListener('change', calculate);
 amountElOne.addEventListener('input', calculate);
 currencyElTwo.addEventListener('change', calculate);
